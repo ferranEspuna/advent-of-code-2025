@@ -8,7 +8,6 @@ def zeros_between(x, y):
     return (abs(y) - 1) // 100 + (1 if y < 0 and x != 0 else 0)
 
 def rotate(start, rotation):
-
     x, curr_true_zeros, curr_passing_zeros = start
     moved = x + rotation
     result = moved % 100
